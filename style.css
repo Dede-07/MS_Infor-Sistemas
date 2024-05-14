@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid grey;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 10%;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+
+.logo h1 {
+    color: #2b0b79;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu {
+    flex: 70%;
+    /* border: 1px solid green; */
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #2b0b79;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #515062;
+    border-top: 5px solid #2b0b79;
+}
+
+#botao {
+    background: #2b0b79;
+    padding: 10px 25px;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover {
+    border: none;
+    background-color: #515062;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid red; */
+}
+
+.headline h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #2b0b79;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: grey;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+}
+
+/*BOTÃO 1*/
+.contact-btn {
+    display: inline-block;
+    background-color: #515062;
+    width: 360px;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background: #2b0b79;
+}
+
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid pink; */
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 2%;
+    width: 90%;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #2b0b79;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1.5px solid #515062;
+    font-family: "Roboto", sans-serif;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    text-align: center;
+}
+
+/*BOTÃO 2*/
+.contact-botao {
+    display: inline-block;
+    background-color: #515062;
+    width: 360px;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-botao:hover {
+    background: #2b0b79;
+}
+
+/* #secao{}*/
