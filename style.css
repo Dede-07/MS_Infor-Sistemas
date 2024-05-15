@@ -12,6 +12,7 @@ html {
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     flex-flow: row wrap;
     height: 100px;
@@ -125,10 +126,10 @@ header {
     text-align: center;
 }
 
-section {
+main {
     display: inline-block;
     margin-top: 80px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
@@ -136,7 +137,7 @@ section {
     width: 90%;
 }
 
-section h2 {
+main h2 {
     width: 100%;
     font-size: 50px;
     margin: 0;
@@ -185,4 +186,104 @@ section h2 {
     background: #2b0b79;
 }
 
-/* #secao{}*/
+.abt_us {
+    display: inline-block;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid black; */
+}
+
+.sobre {
+    display: inline-block;
+    flex: 30%;
+    /* border: 1px solid red; */
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 80px;
+    border: 5px solid #f8f8ff;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 2%;
+    width: 90%;
+    background: #f8f8ff;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #2b0b79;
+}
+
+section p {
+    font-size: 30px;
+    color: #33333e;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+section span {
+    font-weight: 490;
+    color: #2b0b79;
+}
+
+.pai_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_3 {
+    /*BOTÃO 3*/
+    background-color: #515062;
+    width: 360px;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn_3:hover {
+    background: #2b0b79;
+}
+
+footer {
+    height: 300px;
+    background-image: linear-gradient(180deg, white, grey);
+    text-align: center;
+    border-top: 5px solid #515062;
+}
+
+footer span {
+    color: #2b0b79;
+}
+
+.logo-rodape {
+    padding: 50px;
+}
+
+.agencia {
+    font-family: 'montserrat' sans-serif;
+    color: #515062;
+    font-size: 45px;
+}
+
+.img1 {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
