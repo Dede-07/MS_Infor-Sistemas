@@ -12,7 +12,7 @@ html {
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -135,6 +135,8 @@ header {
 main {
     display: inline-block;
     margin-top: 80px;
+    position: relative;
+    z-index: 1;
     /* border: 1px solid black; */
     margin-left: 5%;
     margin-right: 5%;
@@ -275,8 +277,7 @@ section span {
 }
 
 .maps {
-    width: 600px;
-    height: 500px;
+    border: 2px solid #515062;
 }
 
 footer {
@@ -389,36 +390,90 @@ footer span {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+
     .logo {
         max-width: 60%;
     }
 
     header {
         padding-top: 90px;
-        /* Reduzindo o padding do header */
+    }
+
+    header p {
+        display: none;
     }
 
     .headline {
-        margin: 5% 10%;
+        flex: 100%;
+        margin: 5;
         /* Reduzindo as margens */
+    }
+
+    .headline h2 {
+        color: #33333e;
+        margin: 2px;
     }
 
     .contact-btn {
         margin-top: 10px;
-        /* Reduzindo o espaçamento entre o texto e o botão */
-    }
-
-    main {
-        margin-top: 90px;
-        /* Altura do header reduzida */
+        background-color: #2b0b79;
     }
 
     main .card {
+        margin-right: 1%;
+    }
+
+    main h2 {
+        color: #33333e;
+        margin: 0;
+    }
+
+    .contact-botao {
+        background: #2b0b79;
+        width: 250px;
+        padding: 10px 25px;
+        color: aliceblue;
+        border-radius: 5px;
+    }
+
+
+    section {
         width: 90%;
-        /* Alterando a largura dos cards para preencher mais a tela */
+    }
+
+    section h2 {
+        text-align: left;
+        font-size: 30px;
+        margin-right: 10%;
+    }
+
+    section p {
+        font-size: 16px;
+        position: relative;
+        text-align: left;
+        margin-left: 1%;
+        margin-right: 20%;
+    }
+
+    .pai_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .maps {
+        border-radius: 5px;
     }
 
     footer {
         height: 380px;
+        width: 100%;
     }
 }
