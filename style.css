@@ -12,7 +12,7 @@ html {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -20,7 +20,7 @@ html {
     background-color: white;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid grey;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
 }
 
 .logo {
@@ -28,6 +28,7 @@ html {
     margin-left: 10%;
     /* border: 1px solid red; */
     text-align: left;
+    max-width: 15%;
 }
 
 .logo h1 {
@@ -126,7 +127,6 @@ header {
 .img-headline {
     margin-right: 10%;
     margin-left: 1%;
-    margin-top: -3px;
     flex: 40%;
     /* border: 1px solid pink; */
     text-align: center;
@@ -135,9 +135,6 @@ header {
 main {
     display: inline-block;
     margin-top: 80px;
-    position: relative;
-    z-index: 1;
-    /* border: 1px solid black; */
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
@@ -225,6 +222,16 @@ section {
     overflow: scroll;
 }
 
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre img {
+    max-width: 60%;
+}
+
 section h2 {
     width: 100%;
     font-size: 50px;
@@ -281,26 +288,56 @@ section span {
 }
 
 footer {
-    margin-top: 100px;
-    height: 300px;
+    margin-top: auto;
+    height: 200px;
     background-image: linear-gradient(180deg, white, grey);
     text-align: center;
     border-top: 5px solid #515062;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer span {
-    color: #2b0b79;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
 }
 
-.logo-rodape {
-    padding: 50px;
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-left {
+    align-items: center;
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .agencia {
-    font-family: 'montserrat' sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #515062;
     font-size: 45px;
 }
+
+footer p {
+    font-family: "Poppins", sans-serif;
+    color: #2b0b79;
+}
+
 
 .img1 {
     position: fixed;
@@ -321,6 +358,10 @@ footer span {
         margin: 0;
         text-align: center;
         max-width: 30%;
+    }
+
+    .span {
+        display: none;
     }
 
     header {
@@ -396,6 +437,25 @@ footer span {
 
     .img1 {
         display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 20px;
     }
 }
 
@@ -483,7 +543,26 @@ footer span {
     }
 
     footer {
-        height: 380px;
+        height: 280px;
         width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+
+    .footer-right span {
+        display: none;
     }
 }
